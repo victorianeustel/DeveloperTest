@@ -1,0 +1,39 @@
+<!---------------------------
+SCHEELS Developer Test
+Author: Victoria Neustel
+Date: 08/21/2023
+---------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCHEELS Developer Test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="scripts/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>SCHEELS</h1>
+    <p id="subheader">Developer Test</p>
+  </header>
+
+  <div class="action-nav">
+    <button id="results-button" onclick="generateResults()" aria-label="View results" tabindex=0>Run</button>
+    <button id="reset-button" onclick="resetResults()" aria-label="Reset results" tabindex=0 disabled> Reset</button>
+  </div>
+
+  <main>
+    <p id="instructions">Please click on the <b> Run </b> button to see data.</p>
+    <p id="list"></p>
+  </main>
+
+  <footer>SCHEELS Developer Test | Victoria Neustel</footer>
+</body>
+
+</html>

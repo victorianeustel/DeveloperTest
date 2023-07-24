@@ -1,0 +1,186 @@
+/*-------------------------
+SCHEELS Developer Test
+Author: Victoria Neustel
+Date: 08/21/2023
+-------------------------*/
+
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+
+  background-color: white;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------
+  HEADER STYLING
+  --------------*/
+header {
+  padding-top: 20px;
+  height: fit-content;
+
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  color: #da1a32;
+  margin: 0px;
+  line-height: 60px;
+}
+
+#subheader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  color: #696969;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#subheader div {
+  padding: 0.5em;
+  font-size: 15px;
+}
+
+/* ------------
+  CONTENT STYLING
+  --------------*/
+main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+#instructions {
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 0.5em;
+
+  font-size: 15px;
+  color: #696969;
+  letter-spacing: 0.5px;
+}
+
+#list {
+  text-align: left;
+  font-size: 12px;
+  color: #696969;
+  letter-spacing: 1px;
+}
+
+/* --------------
+  BUTTONS STYLING
+  ----------------*/
+.action-nav {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  width: 175px;
+
+  margin: 0.5em;
+  padding: 7px 22px;
+  align-items: center;
+
+  border-style: none;
+  border-radius: 3px;
+
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .05rem;
+  color: white;
+}
+
+#results-button {
+  background-color: #da1a32;
+}
+
+#results-button:hover {
+  background-color: #bf182b;
+}
+
+#results-button:disabled,
+#results-button:disabled:hover,
+#reset-button:disabled,
+#reset-button:disabled:hover {
+  opacity: 100%;
+  cursor: auto;
+  border: 1px solid rgb(178, 178, 178);
+  color: rgb(178, 178, 178);
+  background-color: rgb(234, 234, 234);
+}
+
+#reset-button {
+  background-color: #696969;
+}
+
+#reset-button:hover {
+  background-color: rgb(129, 129, 129);
+}
+
+/* --------------
+  FOOTER STYLING
+  ----------------*/
+footer {
+  background-color: #2a2a2a;
+  color: white;
+
+  font-weight: 400;
+
+  width: 100%;
+  height: 55px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------
+  MOBILE STYLING
+  ----------------*/
+@media only screen and (max-width: 800px) {
+  body{
+    min-height: 100vh;
+    height: fit-content;
+  }
+
+  main{
+    height: fit-content;
+    overflow:visible;
+  }
+
+}
